@@ -1,5 +1,5 @@
 import baseline, { config as baselineConfig } from '@apleasantview/eleventy-plugin-baseline';
-import catalog from './utils/catalog.js';
+import catalog from './catalog/api.js';
 
 const siteUrl = process.env.URL || 'http://localhost:8080/';
 

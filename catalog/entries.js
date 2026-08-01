@@ -7,7 +7,7 @@
  *   title, artist, genre, year, description, meta { albumUrl, previewUrl }
  *
  * `TBD` is null so templates can test with `{% if album.description %}`.
- * Lookups and indexes live in src/_data/catalog.js.
+ * Lookups and indexes live in catalog/api.js.
  */
 
 const TBD = null;

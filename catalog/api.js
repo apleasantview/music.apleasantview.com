@@ -1,7 +1,7 @@
 /**
  * The music catalog API.
  *
- * Entries are authored in library/entries.js; this file normalises them into
+ * Entries are authored in catalog/entries.js; this file normalises them into
  * a flat `albums` list, a few indexes, and lookup helpers.
  *
  * Each album gains two derived fields:
@@ -9,7 +9,7 @@
  *   slug — `artist/title`, ready to use as a permalink
  */
 
-import entries from '../library/entries.js';
+import entries from './entries.js';
 
 const slugify = (value) =>
 	String(value)
