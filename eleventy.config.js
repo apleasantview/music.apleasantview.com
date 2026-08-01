@@ -3,7 +3,7 @@ import baseline, { config as baselineConfig } from '@apleasantview/eleventy-plug
 const siteUrl = process.env.URL || 'http://localhost:8080/';
 
 const settings = {
-	title: 'My Site',
+	title: 'music',
 	url: siteUrl,
 	defaultLanguage: 'en'
 };
