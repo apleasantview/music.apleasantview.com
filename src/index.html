@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ settings.defaultLanguage }}">
+	<baseline-head></baseline-head>
+	<body>
+		<h1>Music catalog</h1>
+
+		{% for name, albums in catalog.byArtist %}
+		<h2>{{ name }}</h2>
+		<ul>
+			{% for album in albums %}
+			<li>
+				<a href="{{ album.meta.albumUrl }}">{{ album.title }}</a> — {{ album.artist }} — {{
+				album.genre }} — {{ album.year }} {% if album.description %}
+				<p>{{ album.description }}</p>
+				{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+		{% endfor %}
+	</body>
+</html>

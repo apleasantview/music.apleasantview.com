@@ -1,4 +1,5 @@
 import baseline, { config as baselineConfig } from '@apleasantview/eleventy-plugin-baseline';
+import catalog from './utils/catalog.js';
 
 const siteUrl = process.env.URL || 'http://localhost:8080/';
 
@@ -18,6 +19,7 @@ export default async function (eleventyConfig) {
 	);
 
 	eleventyConfig.addGlobalData('settings', settings);
+	eleventyConfig.addGlobalData('catalog', catalog);
 
 	// Site-specific passthroughs, filters, shortcodes, and collections go here.
 }
